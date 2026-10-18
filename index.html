@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet the Team — Group Project Hub</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <!-- ===================== INTRO ===================== -->
+  <div class="intro-screen" aria-hidden="true">
+    <div class="intro-content">
+      <p class="intro-eyebrow">Nexus IT</p>
+      <h1 class="intro-title">Meet the <span class="gradient-text">Team</span></h1>
+      <p class="intro-sub">Four developers, one shared brief. Explore each teammate's individual portfolio.</p>
+      <div class="intro-line"></div>
+    </div>
+  </div>
+
+  <!-- Only ONE nav-toggle and ONE theme-toggle. Theme toggle must sit right before .navbar -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+  <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox" aria-hidden="true">
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="#home" class="logo">Team<span class="logo-dot">.</span></a>
+
+      <div class="nav-right">
+        <label for="theme-toggle" class="theme-switch" aria-label="Toggle dark/light mode">
+          <span class="theme-switch-track">
+            <span class="theme-switch-thumb"></span>
+          </span>
+          <span class="theme-icon sun" aria-hidden="true">☀</span>
+          <span class="theme-icon moon" aria-hidden="true">☾</span>
+        </label>
+
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu">
+          <span></span>
+        </label>
+      </div>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#team">Meet the Team</a>
+        <a href="#about">About the Project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ===================== HERO ===================== -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="hero-eyebrow">group project</p>
+        <h1 class="hero-title">Meet the <span class="gradient-text">Team</span></h1>
+        <p class="hero-sub">
+          Four developers, one shared brief. Explore each teammate's individual
+          portfolio to see how they approached the project in their own way.
+        </p>
+        <a href="#team" class="btn btn-primary">See the Team ↓</a>
+      </div>
+    </section>
+
+    <!-- ===================== TEAM GRID ===================== -->
+    <section id="team" class="team">
+      <div class="section-label">
+        <span class="section-label-tag">01</span> The Team
+      </div>
+      <h2 class="section-heading">Four portfolios, one project</h2>
+
+      <div class="team-grid">
+
+        <a href="Lising.html" class="team-card">
+          <div class="photo-wrapper" data-initials="JL">
+            <img src="Lising.jpeg" alt="Portrait of Joshua Lance Lising" class="team-photo" loading="lazy" width="110" height="110" onerror="this.style.display='none'">
+          </div>
+          <div class="team-content">
+            <h3 class="team-name">Joshua Lance Lising</h3>
+            <p class="team-role">Aspiring Front-End Developer</p>
+            <p class="team-desc">Can debug CSS Grid faster than he can find her keys.</p>
+          </div>
+          <span class="view-btn">View Portfolio →</span>
+        </a>
+
+        <a href="Ruar.html" class="team-card">
+          <div class="photo-wrapper" data-initials="HR">
+            <img src="ruar.jpg" alt="Portrait of Honey Shane Ruar" class="team-photo" loading="lazy" width="110" height="110" onerror="this.style.display='none'">
+          </div>
+          <div class="team-content">
+            <h3 class="team-name">Honey Shane Ruar</h3>
+            <p class="team-role">Aspiring IT Support Specialist</p>
+            <p class="team-desc">Has strong opinions about the correct amount of border-radius.</p>
+          </div>
+          <span class="view-btn">View Portfolio →</span>
+        </a>
+
+        <a href="Sabado.html" class="team-card">
+          <div class="photo-wrapper" data-initials="JS">
+            <img src="Sabado.jpg" alt="Portrait of Joan Sabado" class="team-photo" loading="lazy" width="110" height="110" onerror="this.style.display='none'">
+          </div>
+          <div class="team-content">
+            <h3 class="team-name">Joan Sabado</h3>
+            <p class="team-role">Aspiring UI Designer</p>
+            <p class="team-desc">Reads terms &amp; conditions for fun, unfortunately.</p>
+          </div>
+          <span class="view-btn">View Portfolio →</span>
+        </a>
+
+        <a href="Rosario.html" class="team-card">
+          <div class="photo-wrapper" data-initials="BR">
+            <img src="Rosario.jpg" alt="Portrait of Bernilita Rosario" class="team-photo" loading="lazy" width="110" height="110" onerror="this.style.display='none'">
+          </div>
+          <div class="team-content">
+            <h3 class="team-name">Bernilita Rosario</h3>
+            <p class="team-role">Aspiring Web Support Specialist</p>
+            <p class="team-desc">Breaks every feature within thirty seconds of it shipping.</p>
+          </div>
+          <span class="view-btn">View Portfolio →</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="about-project">
+      <div class="about-project-inner">
+        <div class="section-label centered">
+          <span class="section-label-tag">02</span> About the Project
+        </div>
+        <h2 class="section-heading">A shared brief, four points of view</h2>
+        <p>
+          This site was built as a group project for our web development class.
+          Each of us designed and coded our own personal portfolio using only
+          HTML and CSS, then linked them together here as a single team hub.
+        </p>
+        <p class="about-extra">
+          No frameworks. No JavaScript. Just clean markup, modern CSS, and a lot of
+          collaboration.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="#home" class="logo footer-logo">Team<span class="logo-dot">.</span></a>
+
+      <div class="social-links">
+        <a href="https://github.com" class="social-icon" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2.16c-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.95.1-.75.4-1.25.73-1.53-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18.92-.26 1.9-.39 2.88-.39.98 0 1.96.13 2.88.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.08.78 2.17v3.22c0 .3.21.66.79.55C20.71 21.39 24 17.08 24 12c0-6.27-5.23-11.5-12-11.5z"/>
+          </svg>
+        </a>
+        <a href="https://linkedin.com" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/>
+          </svg>
+        </a>
+        <a href="mailto:team@example.com" class="social-icon" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M2 4h20v16H2V4zm2 2v.01L12 12l8-5.99V6H4zm16 2.24-7.4 5.55a1 1 0 0 1-1.2 0L4 8.24V18h16V8.24z"/>
+          </svg>
+        </a>
+      </div>
+
+      <p class="footer-copy">© 2026 Group Project Team. Built with HTML &amp; CSS, no JavaScript.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

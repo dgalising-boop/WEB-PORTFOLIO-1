@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joan G. Sabado — Aspiring UI Designer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="All.css">
+</head>
+<body>
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<div class="intro-screen" aria-hidden="true">
+  <div class="intro-content">
+    <p class="intro-eyebrow">// PROFESSIONAL PROFILE</p>
+    <h1 class="intro-title">Joan G. <span class="gradient-text">Sabado</span></h1>
+    <p class="intro-sub">Aspiring UI Designer</p>
+    <div class="intro-line"></div>
+  </div>
+</div>
+
+<input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+<input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox" aria-hidden="true">
+
+<header class="navbar">
+  <div class="navbar-inner">
+    <a href="#home" class="logo">JS<span class="logo-dot">.</span></a>
+
+    <div class="nav-right">
+      <label for="theme-toggle" class="theme-switch" aria-label="Toggle dark/light mode">
+        <span class="theme-switch-track">
+          <span class="theme-switch-thumb"></span>
+        </span>
+        <span class="theme-icon sun" aria-hidden="true">☀</span>
+        <span class="theme-icon moon" aria-hidden="true">☾</span>
+      </label>
+
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu">
+        <span></span>
+      </label>
+    </div>
+
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html">Team Hub</a>
+      <a href="#about">About</a>
+      <a href="#objective">Objective</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">// Professional Profile</p>
+      <h1 class="hero-name">Joan G. <span class="gradient-text">Sabado</span></h1>
+      <p class="hero-role">Aspiring UI Designer</p>
+      <p class="hero-terminal">
+        <span class="terminal-prompt">$</span> applying creativity and eager to learn
+        <span class="cursor-blink" aria-hidden="true">|</span>
+      </p>
+      <div class="hero-cta-group">
+        <a href="#objective" class="btn btn-primary">View Profile</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="section-label"><span class="section-label-tag">01</span> About Me</div>
+
+    <div class="about-grid">
+      <div class="profile-frame" data-initials="JS">
+        <img src="Sabado.jpg" alt="Portrait of Joan G. Sabado" class="profile-img" loading="lazy" width="300" height="300" onerror="this.style.display='none'">
+      </div>
+
+      <div class="about-text">
+        <h2>Creative, driven, and ready to make a positive impact.</h2>
+        <p>
+          My goal is to apply my knowledge, creativity, and skills in a position where I can learn, gain real-world experience, and contribute positively to an organization. I am highly motivated to explore the field of User Interface design and digital experiences.
+        </p>
+        <p>
+          While I am currently building my professional background, my strong willingness to learn, accept challenges, and work hard ensures that I will be a valuable and adaptable addition to any creative team.
+        </p>
+        <a href="#contact" class="btn btn-outline">Let's Work Together</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="objective" class="experience">
+    <div class="section-label"><span class="section-label-tag">02</span> Career Focus</div>
+    <h2 class="section-heading">Professional Objective</h2>
+
+    <div class="experience-grid single-card-grid">
+
+      <article class="exp-card">
+        <div class="exp-header">
+          <h3>Entry-Level Professional</h3>
+          <span class="exp-date">Current Focus</span>
+        </div>
+        <p class="exp-company">Seeking Opportunities</p>
+        <ul class="exp-list">
+          <li>Actively seeking positions to develop practical UI design skills.</li>
+          <li>Highly adaptable with a strong willingness to learn new software, workflows, and technologies.</li>
+          <li>Eager to accept challenges, collaborate with experienced mentors, and work hard to achieve organizational goals.</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="section-label"><span class="section-label-tag">03</span> Qualifications</div>
+    <h2 class="section-heading">Core Skills & Education</h2>
+
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>Core Competencies</h3>
+        <div class="tools-row">
+          <span class="tool-chip">UI Design</span>
+          <span class="tool-chip">Creative Thinking</span>
+          <span class="tool-chip">Design Principles</span>
+          <span class="tool-chip">Willingness to Learn</span>
+          <span class="tool-chip">Adaptability</span>
+          <span class="tool-chip">Problem Solving</span>
+        </div>
+      </div>
+
+      <div class="education-block">
+        <h3>Education & Credentials</h3>
+        <div class="edu-item">
+          <strong>Secondary Education</strong>
+          <span>Guiling Coliling National High School</span>
+        </div>
+        <div class="edu-item">
+          <strong>Elementary Education</strong>
+          <span>Sitio Baong Elementary School</span>
+        </div>
+        <div class="edu-item">
+          <strong>Academic Achievement</strong>
+          <span>Overall With Honors</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="contact-inner">
+      <div class="section-label centered"><span class="section-label-tag">04</span> Contact</div>
+      <h2 class="section-heading">Let's connect</h2>
+      <p class="contact-sub">
+        Looking for an eager and dedicated aspiring UI Designer for your team? Feel free to reach out.
+      </p>
+
+      <div class="contact-buttons">
+        <a href="Joan_Sabado_Updated_Resume.pdf" download class="btn btn-outline">Download Resume</a>
+        <a href="mailto:joansabado479@gmail.com" class="btn btn-primary">Email Me</a>
+        <a href="tel:09934578093" class="btn btn-outline">Call Me</a>
+      </div>
+
+      <div class="contact-details">
+        <div class="contact-detail">
+          <span class="contact-detail-label">Email</span>
+          <a href="mailto:joansabado479@gmail.com">joansabado479@gmail.com</a>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-detail-label">Phone</span>
+          <a href="tel:09934578093">09934578093</a>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-detail-label">Location</span>
+          <span>San Isidro, Rosales, Pangasinan</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="#home" class="logo footer-logo">JS<span class="logo-dot">.</span></a>
+    <p class="footer-copy">© 2026 Joan G. Sabado. Professional Resume Portfolio.</p>
+  </div>
+</footer>
+
+</body>
+</html>
